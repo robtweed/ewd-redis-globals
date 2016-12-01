@@ -1,0 +1,22 @@
+{
+  "name": "ewd-redis-globals",
+  "version": "0.1.0",
+  "description": "Redis emulation of Global Storage database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robtweed/ewd-redis-globals.git"
+  },
+  "author": "Rob Tweed, M/Gateway Developments Ltd",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ewd-document-store": ""
+  },
+  "bugs": {
+    "url": "https://github.com/robtweed/ewd-redis-globals/issues"
+  },
+  "homepage": "https://github.com/robtweed/ewd-redis-globals#readme"
+}
