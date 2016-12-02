@@ -111,8 +111,7 @@ If you're running Redis on a different machine and non-standard port:
 
 To understand the basics of a Global Storage database, see 
 
-[http://www.slideshare.net/robtweed/ewd-3-training-course-part-17-introduction-to-global-storage-databases]
-(http://www.slideshare.net/robtweed/ewd-3-training-course-part-17-introduction-to-global-storage-databases)
+[http://www.slideshare.net/robtweed/ewd-3-training-course-part-17-introduction-to-global-storage-databases](http://www.slideshare.net/robtweed/ewd-3-training-course-part-17-introduction-to-global-storage-databases)
 
 The hierarchical structure of a Global is emulated using three sets of Redis keys:
 
