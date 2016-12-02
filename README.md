@@ -116,7 +116,7 @@ To understand the basics of a Global Storage database, see
 
 The hierarchical structure of a Global is emulated using three sets of Redis keys:
 
-- node:xxxx  A hash that contains details about each Global Node, specifically whether its a leaf-node
+- node:xxxx  A hash that contains details about each Global Node, specifically whether it's a leaf-node
  or not, and if so, its value
 
 - children:xxxx  A sorted list containing any child subscript values for each of a Global's nodes
@@ -130,7 +130,7 @@ a singe string using Hex 01 as a delimiter.  For example the Global Node:
 
 would be represented as:
 
-      rob\x01b\x01\c
+      rob\x01a\x01b\x01\c
 
 In order to emulate the subscript collating order of Global Storage database, integer subscript values
 are padded out with up to 9 leading zeros within the children:xxxx sorted lists.
