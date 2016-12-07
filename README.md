@@ -18,7 +18,7 @@ This module provides an emulation of a Global Storage database using Redis.
 The APIs are modelled on the *cache.node* interface provided by the Cach&eacute; database (a
 proprietary Global Storage database) and are designed to behave identically.
 
-NOTE: the APIs make use of a synchronous TCP connector: *tcp-netx*.  It is
+NOTE: the APIs make use of a synchronous TCP connector: [*tcp-netx*](https://github.com/chrisemunt/tcp-netx).  It is
 designed to be used in conjunction with the [ewd-qoper8](https://github.com/robtweed/ewd-qoper8) module and used within 
 its worker processes, where synchronous database access does not interfere with 
 the main Node.js process, rather than in conventional Node.js-based applications.
@@ -31,7 +31,18 @@ which uses the [*ewd-document-store*](https://github.com/robtweed/ewd-document-s
 Global Storage as something
 uniquely powerful: persistent JavaScript objects and a fine-grained Document Database.
 
+
 ## Installation
+
+Before installing *ewd-redis-globals*, you must first install *tcp-netx*.  Read its 
+[installation instructions](https://github.com/chrisemunt/tcp-netx) carefully as it requires a C++ compiler to
+be present on your system before it can build.  Assuming you've done this:
+
+      npm install tcp-netx
+
+
+Then install ewd-redis-globals:
+
 
       npm install ewd-redis-globals
 
@@ -139,16 +150,6 @@ simple keys:
 
 - lock:xxxx  Representing the Global Node that is locked
 - locker: xxxx  Representing the process locking the node
-
-
-## Current Limitations
-
-The current version of *ewd-redis-globals* will currently only run on:
-
-- Linux machines with Node.js version 6.x
-- Raspberry Pi with Node.js version 6.x
-
-More platforms will become available soon
 
 
 ## License
