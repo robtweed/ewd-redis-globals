@@ -1,6 +1,6 @@
 {
   "name": "ewd-redis-globals",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Redis emulation of Global Storage database",
   "main": "index.js",
   "scripts": {
